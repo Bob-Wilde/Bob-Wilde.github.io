@@ -324,7 +324,7 @@ color: var(--bg-color);
 }
 
 .home {
-  background: url(/Images/bgc.jpg) center center no-repeat;
+  background: url(Images/bgc.jpg) center center no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
