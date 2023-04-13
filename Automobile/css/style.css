@@ -1840,6 +1840,17 @@ hr {
   }
 }
 
+@media (max-width: 667px) {
+  .main.payment{
+  width: 100%;
+  }
+
+  .payment .fade{
+    font-size: .8rem;
+  }
+}
+
+
 @media (max-width:614px) {
   .vehicle-btns {
     display: none;
@@ -1861,6 +1872,30 @@ hr {
   }
 
 }
+
+@media (max-width: 582px) {
+  .main.payment{
+  right: 3rem;
+}
+.payment h3{
+  position: relative;
+  right: 3rem;
+}
+}
+
+@media (max-width: 560px) {
+  .support{
+    right: 12rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .main.payment,
+  .payment h3{
+  right: 5rem;
+}
+}
+
 
 @media (max-width: 500px) {
 .footer-box.payment{
