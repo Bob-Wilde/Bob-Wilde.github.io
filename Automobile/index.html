@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="div-block">
+        <div class="header-container">
+            <header>
+                <nav class="main-navbar">
+                    <div class="nav-1">
+                        <a href="index.html" class="logo">
+                            <h1>AutoMobile</h1>
+                            <img src="https://img.icons8.com/ios/30/null/tesla-model-x.png" />
+                        </a>
+                        <!-- ! Icons -->
+                        <div class="header-icons">
+                            <i class='bx bx-search' id="search-icon"></i>
+                            <i class='bx bx-user' id="user-icon"></i>
+                            <a href="cart.html">
+                            <div class="cart-main">
+                            <i class='bx bx-cart-alt' id="cart-icon"></i>
+                            <div class="cartAmount">0</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="navbar menu">
+                        <div class="navbar-li">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#vehicles" class="">Vehicles</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                        </div>
+                        <i class='bx bx-menu' id="menu-icon"></i>
+                    </ul>
+
+                    <!-- Search Box -->
+                    <form action="#">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </form>
+
+                    <!-- Cart box -->
+                    <div class="cart">
+
+                    </div>
+
+                    <!-- User -->
+                    <div class="user">
+                        <form action="#">
+                            <h2>Login Now</h2>
+                            <input type="email" placeholder="Your Email...">
+                            <input type="password" name="" id="" placeholder="Password">
+                            <input type="submit" value="Login" class="login-btn">
+                            <p>Forget Password <a href="#">Reset Now</a></p>
+                            <p>Don't have an account <a href="#">Create One</a></p>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- ! Home section -->
+            <section id="home" class="home">
+                <div class="fade"></div>
+                <div class="home-text-discount">
+                    <div class="home-text">
+                        <div class="texts">
+                            <span>Purchase Now</span>
+                            <h1>Check out our Latest<br>Brands</h1>
+                        </div>
+                        <div class="home-btns">
+                            <button type="button" class="discover">Discover</button>
+                            <a href="#popular" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <div class="discount">
+                        <a href="#">
+                            <span class="from">from</span>
+                            <h2>$21,402</h2>
+                            <span class="buy">buy now</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ! Vehicle Section -->
+        <article id="vehicle-btns" class="vehicle-btns">
+            <h2 id="popular">View Popular Brands</h2>
+            <div class="btn-con">
+                <h3>Our<span class="btn">vehicles</span></h3>
+            </div>
+            <div class="btn-container">
+                <button class="brand-btn" onclick="filterProduct('all')">all</button>
+                <button class="brand-btn" onclick="filterProduct('Toyota')">toyota</button>
+                <button class="brand-btn" onclick="filterProduct('BENZ')">benz</button>
+                <button class="brand-btn" onclick="filterProduct('BMW')">bmw</button>
+                <button class="brand-btn" onclick="filterProduct('Hyundai')">hyundai</button>
+                <button class="brand-btn" onclick="filterProduct('Nissan')">nissan</button>
+            </div>
+        </article>
+
+        <section id="vehicles" class="vehicles">
+            <div class="vehicle-wrapper">
+            </div>
+        </section>
+
+
+        <!-- ! Reviews -->
+        <section class="reviews" id="reviews">
+            <div class="btn-con">
+                <h3>Our<span class="btn">Customer's</span></h3>
+            </div>
+
+            <div class="reviews-container">
+                <div class="box">
+                    <div class="review-img">
+                        <img src="/Images/shirt2.avif" alt="">
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit provident, nemo
+                        exercitationem ullam culpa obcaecati fugit, illum sequi cupiditate voluptatibus? Nisi qui atque
+                        voluptas, asperiores dolores necessitatibus molestias vel!</p>
+                    <h2>Kojo Tano</h2>
+                </div>
+                <div class="box">
+                    <div class="review-img">
+                        <img src="/Images/shirt3.avif" alt="">
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit provident, nemo
+                        exercitationem ullam culpa obcaecati fugit, illum sequi cupiditate voluptatibus? Nisi qui atque
+                        voluptas, asperiores dolores necessitatibus molestias vel!</p>
+                    <h2>James Brown</h2>
+                </div>
+                <div class="box">
+                    <div class="review-img">
+                        <img src="/Images/top3.avif" alt="">
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit provident, nemo
+                        exercitationem ullam culpa obcaecati fugit, illum sequi cupiditate voluptatibus? Nisi qui atque
+                        voluptas, asperiores dolores necessitatibus molestias vel!</p>
+                    <h2>Ted Lasso</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! footer -->
+        <div class="btn-con">
+            <h3>About<span class="btn">us</span></h3>
+        </div>
+        <footer class="footer" id="about-us">
+            <div class="footer-box auto">
+                <h2>AutoMobile</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam sint alias esse? Distinctio ea rerum
+                    sit
+                    libero, similique ab in soluta laborum velit error nulla tempora, dolores placeat nihil consectetur.
+                </p>
+            </div>
+
+
+            <div class="footer-box support">
+                <h3>Support</h3>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms of User</a></li>
+                <li><a href="#">FAQ</a></li>
+            </div>
+
+            <div class="footer-box branches">
+                <h3>Our Branches</h3>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">Brazil</a></li>
+                <li><a href="#">Belgium</a></li>
+                <li><a href="#">Sweden</a></li>
+                <li><a href="#">USA</a></li>
+            </div>
+            <div class="footer-box payment">
+                <h3>Payment Method</h3>
+                <div class="main payment">
+                    <div class="overlay">
+                        <img src="/Images/amer.avif" alt="">
+                        <div class="fade">ATM</div>
+                    </div>
+                    <div class="overlay">
+                        <img src="/Images/visa.avif" alt="">
+                        <div class="fade">visa</div>
+                    </div>
+                    <div class="overlay">
+                        <img src="/Images/master.avif" alt="">
+                        <div class="fade">master</div>
+                    </div>
+                    <div class="overlay">
+                        <img src="/Images/paypal.avif" alt="">
+                        <div class="fade">paypal</div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <hr>
+        <!-- Copyright -->
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <div class="copyright">
+            <p>&#169; Robert Wilde All Right Reserved</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/Data.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
