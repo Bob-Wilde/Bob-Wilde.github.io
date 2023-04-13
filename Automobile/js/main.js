@@ -6,6 +6,8 @@ const menuIconElem = document.getElementById("menu-icon");
 const searchIconElem = document.querySelector("#search-icon");
 const userElem = document.querySelector(".user");
 const userIconElem = document.getElementById("user-icon");
+const scrollLinks= document.querySelectorAll(".scroll-link");
+const sectionElems=document.querySelectorAll('.section')
 
 
 document.addEventListener("readystatechange", (event) => {
@@ -26,6 +28,8 @@ let cartBasket=getLocalStorage()
 window.addEventListener("scroll", () => {
     headerElem.classList.toggle("shadow", scrollY > 0);
     searchInputElem.classList.remove("active");
+  navbarLiElem.classList.remove('active')
+  userElem.classList.remove('active')
 });
 
 
@@ -50,6 +54,33 @@ menuIconElem.addEventListener("click", () => {
   searchInputElem.classList.remove("active");
 
 });
+
+//clicking on section removes active class from navbar links
+scrollLinks.forEach((link) => {
+  link.onclick=()=> {
+    navbarLiElem.classList.remove('active')
+  }
+});
+
+//scrolling to a section adds class of active to navbar links
+window.onscroll = () => {
+  sectionElems.forEach((section) => {
+    let top = window.scrollY
+    let offset = section.offsetTop - 150
+    let height = section.offsetHeight
+    let id = section.getAttribute('id')
+    
+    if (top >= offset && top < offset + height) {
+      scrollLinks.forEach((link) => {
+        link.classList.remove('active')
+        const header = document.querySelector('.navbar .navbar-li a[href*=' + id + ']')
+      //  console.log(header);
+        header.classList.add('active')
+        //console.log(link,header);
+      })
+    }
+  })
+}
 
 const loadCars = () => {
   const data = CarData.map((car) => {
