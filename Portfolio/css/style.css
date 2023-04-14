@@ -746,6 +746,7 @@ color: var(--second-bg-color);
   padding: 2rem;
   margin-bottom: 3rem;
   font-weight: 500;
+  color: red;
 }
 
 /* ! Media Queries */
