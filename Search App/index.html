@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchMe</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <link rel="shortcut icon" href="icons8-search-16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <main>
+        <h1 class="offscreen">Search Me a Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">M</span>
+                <span class="red">i</span>
+                <span class="yellow">n</span>
+                <span class="blue">i</span>
+                <span class="green">W</span>
+                <span class="red">i</span>
+                <span class="blue">K</span>
+                <span class="yellow">i</span>
+                <span class="red exclaim">!</span>
+            </div>
+            <form id="searchbar" class="searchbar">
+                <label for="search" class="offscreen">Enter a search term or phrase</label>
+                <input type="text" id="search" autocomplete="off" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear searchterms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchbtn" class="button searchbtn" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2 class="offscreen">Search results</h2>
+            <div class="statsbar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+
+            <div id="searchresults" class="searchresults">
+                <!-- <div class="resultitem">
+                    <div class="resulttitle">
+                        <a href="">Daschsund</a>
+                    </div>
+                    <div class="resultcontents">
+                        <div class="resultimg">
+                            <img src="/item-3.jpeg" height="37" width="50" alt="Daschsund">
+                        </div>
+                        <div class="resulttext">
+                            <p class="resultdesc">Netnaija: Information and Entertainment Hub
+
+                                Netnaija
+                                https://www.thenetnaija.net
+                                Nigerian news and media download center. Latest music, videos, music, movies etc.
+                                Movies
+                                Movies (Page 2) - Series - Search - Movies (Page 4) - ...
+                                Series
+                                Trending Videos · Megan Thee Stallion - Movie (feat. Lil Durk ...</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <span aria-hidden="true">&lt;&lt;</span> Powered by
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <span aria-hidden="true">&gt;&gt;</span>
+        </p>
+    </footer>
+</body>
+
+</html>

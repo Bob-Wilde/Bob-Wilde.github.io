@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form.css">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <header>SignUp</header>
+
+        <form action="https://www.facebook.com/warbob/">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                    <span class="error email-error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">Please Enter a valid mail</p>
+                    </span>
+            </div>
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" id="password" placeholder="Create password">
+                    <i class='bx bx-hide show-hide' ></i>
+                </div>
+                    <span class="error password-error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">
+                            Please enter at least 8 characters with a number, symbol, small and
+                            capital letter.
+                         </p>
+                    </span>
+                
+            </div>
+            <div class="field confirm-password">
+                <div class="input-field">
+                    <input type="password" id="cpassword" placeholder="Confirm password">
+                    <i class='bx bx-hide show-hide' ></i>
+                </div>
+                    <span class="error cPassword-error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">
+                            Password does not match.
+                         </p>
+                    </span>
+                
+            </div>
+
+            <div class="input-field button">
+                <input type="submit" value="Submit Now">
+            </div>
+        </form>
+    </div>
+
+    <script src="/form.js"></script>
+</body>
+
+</html>
