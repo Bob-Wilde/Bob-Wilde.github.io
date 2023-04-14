@@ -21,7 +21,7 @@ const viewAccessories = () => {
 
     const containerElem = document.getElementById('access')
     const buttonElem = document.createElement("a");
-     buttonElem.href = "bicyclopedia.html";
+     buttonElem.href = "index.html";
      buttonElem.innerHTML = `<button class="home rounded">Back to Home</button>`
     containerElem.innerHTML = data;
      containerElem.append(buttonElem);

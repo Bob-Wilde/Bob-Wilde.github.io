@@ -71,7 +71,7 @@ function ViewBikes() {
     .join("");
 
   const buttonElem = document.createElement("a");
-  buttonElem.href = "bicyclopedia.html";
+  buttonElem.href = "index.html";
   buttonElem.innerHTML = `<button onclick="loadBikes()" class="home rounded">Back to Home</button>`;
   const bikeElem = document.querySelector("#bikes");
   console.log(bikeElem);
