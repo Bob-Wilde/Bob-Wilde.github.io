@@ -1,0 +1,1293 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap");
+
+/*start: global styles */
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.7;
+}
+
+* {
+  outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f69314;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+button.rounded {
+  background: #f69314;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+p.large {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/*end: global styles
+
+/*start header styles */
+#header-hero-container {
+  min-height: 600px;
+  height: calc(100vh);
+  position: relative;
+}
+
+header {
+  background: transparent;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.bicycle .name {
+  text-align: center;
+  padding: 3rem;
+}
+
+#bikes a {
+  margin-top: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+#bikes {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#bikes .bike-img {
+  display: block;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.5rem;
+}
+
+#access{
+  max-width: 1140px;
+  margin: 40px auto 20px;
+  
+}
+
+#access .card-img {
+  max-width: 60%;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 0.5rem;
+}
+
+#access .card-img img{
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#access .card-float{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+
+}
+
+#access .card-float .price-desc{
+  max-width: 60%;
+  padding: 2rem;
+  height: 20.6rem;
+ margin: 2.5rem 0 0 1rem;
+
+}
+
+#access .card-float .price-desc h3{
+  font-weight: bold;
+  margin-top: -2.4rem;
+  color: #f69314;
+  margin-bottom: 1rem;
+}
+
+#access .card-float .price-desc li{
+  font-weight: 600;
+}
+
+#access .card h2{
+  margin-top: 1rem;
+}
+
+#access button.rounded{
+  display: block;
+  margin: 350px;
+  margin: 2rem auto 0;
+}
+
+#bicycle .bike-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bicycle .bicycle-details .price {
+  font-weight: 600;
+  color: #000;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.bicycle .bicycle-details .desc {
+  line-height: 2rem;
+  max-width: 95rem;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+#logo h1 {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+#logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#close-flyout {
+  display: none;
+}
+
+header ul li a {
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul.is-sticky li a {
+  color: black;
+}
+
+header ul li a:hover,
+header ul li a:active {
+  display: inline-block;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a:active {
+  color: #f69314;
+}
+/* end header styles */
+
+/* start hero section styles */
+#hero {
+  background: url(../Images/Bikes/bgc.webp) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero.bicycle {
+  background: url(../Images/Bikes/bmx.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+#hero.accessories {
+  background: url(../Images/Accessories/access.jpg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero .fade {
+  position: absolute;
+  background: rgba(52, 58, 64, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#hero .hero-text {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  color: #fff;
+  text-align: center;
+}
+
+#hero .hero-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
+}
+/*end hero section styles*/
+
+/* start hiw it works */
+#how-it-works {
+  padding: 3rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#how-it-works h2 {
+  margin-bottom: 3rem;
+}
+
+#how-it-works .flex > div {
+  width: 30%;
+}
+
+#how-it-works h4 {
+  color: #343a40;
+  margin-top: 1rem;
+}
+
+/* end how it works */
+
+/* start bicycles styles */
+#bicycles {
+  margin: 4rem 0 8rem;
+  position: relative;
+}
+
+#bicycles h2 {
+  margin-bottom: 3rem;
+}
+
+#bicycles .container {
+  position: relative;
+}
+
+#bicycles .container::before {
+  content: "/";
+  position: absolute;
+  right: 80px;
+  top: 18px;
+  color: #999;
+}
+
+#bicycles-slider a.slick-arrow {
+  color: #000;
+  position: absolute;
+  top: -78px;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+#bicycles-slider a.slick-prev {
+  right: 98px;
+}
+
+#bicycles-slider a.slick-next {
+  right: 20px;
+}
+
+#bicycles-slider .slick-slide {
+  padding: 0 15px;
+}
+
+#bicycles-slider a.slick-arrow:hover{
+  color: #f69314;
+}
+
+#bicycles-slider .bicycle .bike-img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.bike-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#bicycles-slider .bicycle-details {
+  padding: 1rem;
+}
+
+#bicycles-slider .price {
+  font-size: 1.2rem;
+  color: #343a40;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+#bicycles-slider .bicycle-details span {
+  font-size: 0.8rem;
+  padding-right: 15px;
+}
+
+#bicycles-slider .bicycle-details span.name {
+  padding-left: 0rem;
+  margin: 0;
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+}
+#bicycles-slider .bicycle-details span.recom {
+  padding-left: 0.5rem;
+  border-left: 1px solid #888;
+  margin-right: 5.5rem;
+}
+
+#bicycles button.rounded
+ {
+  display: block;
+  margin: 350px;
+  margin: 2rem auto 0;
+}
+/* end bicycles styles */
+
+/* start accessories styles */
+#accessories {
+  margin: 4rem 0 6rem;
+  padding: 0 0 6rem;
+}
+
+#accessories p.large {
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+#accessories .flex {
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#accessories .card {
+  width: 32%;
+  background: #f0f0f0;
+  margin-bottom: 2rem;
+  height: 50%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#accessories .card .card-img {
+  width: 100%;
+  height: 20rem;
+}
+
+#accessories .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#accessories .card h3 {
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+.container.accessories button.rounded{
+display: block;
+  margin: 350px;
+  margin: 2rem auto 0;
+}
+
+#accessories .card h3,
+#accessories .card p {
+  padding-left: 1rem;
+}
+/* end accessories styles */
+
+/* start the best real shop styles */
+#the-best {
+  margin: 2rem 0;
+}
+#the-best .flex > img {
+  width: 40%;
+  height: 525px;
+}
+
+#the-best .flex > div {
+  margin-left: 5rem;
+}
+
+#the-best ul {
+  padding-left: 20px;
+  margin-bottom: 4rem;
+}
+
+#the-best ul li {
+  margin: 10px 0;
+}
+
+/* start services styles */
+#services {
+  background: #f8f9fa;
+  padding: 6rem 0;
+  margin: 8rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+#services .flex {
+  flex-wrap: wrap;
+}
+
+#services .flex > div {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+#services .flex > div img {
+  color: #f69314;
+  float: left;
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+
+#services .flex > div .bicycle-card-right {
+  float: right;
+  width: 75%;
+}
+
+#services .flex > div a {
+  color: #f69314;
+  text-decoration: none;
+}
+
+#services .flex > div a:hover {
+  text-decoration: underline;
+}
+/* end services styles */
+
+/*start testimonial styles */
+#testimonials {
+  margin-bottom: 8rem;
+}
+
+#testimonials h2 {
+  text-align: center;
+}
+#testimonials-slider .slick-slide {
+  text-align: center;
+}
+
+#testimonials-slider blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem auto 3rem;
+  max-width: 740px;
+}
+
+#testimonials-slider .testimonials-caption {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#testimonials-slider .testimonials-caption img {
+  float: left;
+  width: 60px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.testimonials-caption p {
+  position: relative;
+  top: 13px;
+  font-size: 1.2rem;
+}
+
+#testimonials-slider .slick-arrow {
+  text-decoration: none;
+  position: absolute;
+  font-size: 40px;
+  color: #222;
+  top: 50%;
+  margin-top: -35px;
+  z-index: 1;
+}
+
+#testimonials-slider .slick-next {
+  right: 0px;
+}
+
+/*end testimonial styles */
+
+/* start: contact styles */
+#contact {
+  background: #f8f9fa;
+  padding: 4rem 0 8rem;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#form-container {
+  width: 58%;
+  background: #fff;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+#form-container h3 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+}
+
+#form-container label {
+  display: block;
+  color: #000;
+  margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+  display: block;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  box-sizing: border-box;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+}
+
+#form-container textarea {
+  height: 170px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+#address-container {
+  width: 38%;
+  background: #fff;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+#address-container label {
+  font-weight: 700;
+  display: block;
+  margin-top: 2rem;
+}
+
+#address-container label:first-child {
+  margin-top: 0;
+}
+
+#address-container address {
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+
+#address-container a {
+  text-decoration: none;
+  color: #f69314;
+}
+
+#address-container a:hover {
+  text-decoration: underline;
+}
+/* end: contact styles */
+
+/* start: footer styles */
+footer {
+  background: #333;
+  padding: 8rem 0;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #777;
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+footer h5.follow-us {
+  margin-top: 1rem;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+footer .footer-about p {
+  width: 65%;
+}
+footer .footer-quick-links {
+  width: 16%;
+}
+
+footer .footer-quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-quick-links ul li {
+  margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+  color: #fff;
+}
+footer .footer-subscribe {
+  width: 35%;
+}
+
+#subscribe-container {
+  position: relative;
+}
+
+footer .footer-subscribe input {
+  border-radius: 30px;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  border: 1px solid #6c757d;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+footer button.right-rounded {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #f69314;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 30px 9px;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+footer button.right-rounded:hover {
+  background: #fff;
+}
+
+footer .footer-subscribe ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-subscribe ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+footer .footer-subscribe ul li:first-child {
+  margin-left: 0;
+}
+footer .footer-subscribe ul li a {
+  text-decoration: none;
+  color: #777;
+}
+footer .footer-subscribe ul li a:hover {
+  color: #fff;
+}
+
+footer small {
+  margin-top: 3rem;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.name-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin-bottom: 0;
+}
+
+.name-price > p{
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-weight: 800;
+}
+/* end: footer styles */
+
+/* Start: media queries */
+@media (max-width:1174px) {
+  
+  #bikes{
+   max-width: 70rem;
+    margin: 1rem;
+  }
+
+ 
+#bikes .bike-img {
+  
+  width: 700px;
+  height: 500px;
+ 
+}
+
+}
+
+
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+    width: 70px;
+    height: 70px;
+    padding-left: 1rem;
+  }
+
+  #nav-toggle {
+    display: block;
+    margin-right: 1rem;
+    bottom: 1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+
+  #close-flyout {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+  
+#bikes .bike-img {
+  
+  width: 40rem;
+  height: 30rem
+ 
+}
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #f69314;
+  }
+
+  #bicycles,
+  #testimonials,
+  #accessories,
+  #the-best {
+    margin: 1rem;
+  }
+
+  #services,
+  #testimonials,
+  #contact,
+  footer {
+    padding: 1rem;
+  }
+
+  #the-best .flex > div .rounded {
+    margin-bottom: 1rem;
+  }
+
+  #services,
+  #contact {
+    margin-top: 3rem;
+  }
+
+  #the-best .flex > img {
+    height: 590px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .large-paragraph {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  #logo {
+    top: 3px;
+    right: 7rem;
+    width: 50px;
+    height: 50px;
+  }
+
+#access .card{
+  margin: 1rem;
+  
+}
+
+#access .price-desc li{
+  font-size: .9rem;
+}
+
+#access .card-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 6.1rem;
+
+}
+
+
+#bikes .bike-img {
+  
+  width: 35rem;
+  height: 25rem
+ 
+}
+
+#bikes .price{
+  font-size: 1.5rem;
+}
+
+  .container {
+    max-width: 540px;
+  }
+
+  #hero .hero-text {
+    width: 400px;
+  }
+
+  #accessories .card {
+    width: 49%;
+  }
+
+  #the-best .flex > img {
+    display: none;
+  }
+
+  
+  #services .flex > div img{
+    width: 3rem
+  }
+
+
+  #the-best .flex > div {
+    width: 100%;
+  }
+
+  #testimonials-slider p {
+    font-size: 1.2rem;
+  }
+
+  #bicycles .container:before {
+    top: 2px;
+    font-size: 0.85rem;
+  }
+
+  #bicycles-slider a.slick-arrow {
+    font-size: 0.85rem;
+  }
+
+  #bicycles button.rounded {
+    width: 300px;
+  }
+
+  #services .flex > div {
+    width: 48%;
+  }
+
+  #contact .flex {
+    flex-wrap: wrap;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #address-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 6rem 0;
+  }
+
+  footer .flex {
+    flex-wrap: wrap;
+  }
+
+  footer .flex > div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  footer .flex > div:first-child {
+    margin-top: 0;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  footer .footer-subscribe input {
+    width: 90%;
+  }
+
+  footer h5.follow-us {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 740px) {
+  
+  #logo {
+    top: 3px;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 612px) {
+  #how-it-works h4{
+    font-size: 20px;
+  }
+  
+#bikes .bike-img {
+  margin: 0 1rem;
+  padding-right: 1.5rem;
+  width: 30rem;
+  height: 25rem
+}
+
+#access .card-float{
+  display: flex;
+  flex-direction: column;
+  align-items:center
+}
+
+#access .card-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 6.1rem;
+}
+
+
+
+#access .price-desc h3{
+  margin-bottom: 11rem;
+
+}
+
+.card h2{
+  text-align: center;
+}
+
+}
+@media (max-width: 531px) {
+  #how-it-works h4{
+   font-size: 15px;
+  }
+
+  #how-it-works .flex > div img{
+    width: 3rem
+  }
+
+  
+#bikes .bike-img {
+  
+margin-left: .6rem;
+}
+
+}
+
+@media (max-width: 500px) {
+  #hero .hero-text {
+    width: 330px;
+  }
+
+  #logo h1 {
+    display: none;
+  }
+
+  #logo {
+    top: 1px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  
+#bikes .bike-img {
+  
+  width: 20rem;
+  height: 20rem
+ 
+}
+
+#bikes .price{
+  font-size: 1.2rem;
+}
+
+  #accessories {
+    margin: 4rem 0 3rem;
+    padding: 0 0 3rem;
+  }
+
+  #accessories .card {
+    width: 100%;
+  }
+
+  #accessories p.large-paragraph {
+    width: 100%;
+  }
+
+  #how-it-works .flex {
+    display: block;
+  }
+
+  #how-it-works .flex > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+
+  #bicycles button.rounded {
+    width: 250px;
+  }
+
+  #services {
+    padding: 1rem;
+    margin: 4rem 0;
+  }
+
+  #services .flex > div {
+    width: 100%;
+  }
+
+  #testimonials {
+    margin-bottom: 4rem;
+  }
+
+  #testimonials-slider p {
+    font-size: 1rem;
+  }
+
+  #testimonials-slider .slick-arrow {
+    display: none !important;
+  }
+
+  #contact {
+    padding: 4rem 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 2rem;
+  }
+
+  #the-best {
+    margin-right: 5rem;
+  }
+
+  #form-container {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding: 4rem 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .hero-text {
+    max-width: 275px;
+    width: 100%;
+  }
+
+  #bicycles button.rounded {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 200px;
+  }
+}
+
+/* End: media queries */
